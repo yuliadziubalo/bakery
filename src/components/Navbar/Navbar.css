@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.a-logo{
+    font: bold 1.5rem 'Ruda', sans-serif;
+    line-height: 1.5rem;
+}
+
+.nav {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: regular;
+    background: #9C338B;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav a{
+    transition: 0.3s;
+    padding: 0.7rem 1.3rem 1.3rem;
+    margin: 0 0.5rem;
+}
+
+.nav a:hover, nav a.active{
+    background:  rgb(255, 255, 255);
+    color: #9C338B;
+    cursor: pointer;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.phone{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
