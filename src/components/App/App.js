@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Main from '../pages/Main';
 import Order from '../pages/Order';
 import Adress from '../pages/Adress';
+import Footer from '../Footer/Footer';
 
 function App() {
     let component
@@ -23,6 +24,7 @@ function App() {
         <>
             <Navbar />
             {component}
+            <Footer />
         </>
     )
 }

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.assort-card{
+    background: #FEC600;
+    width: 18.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font: 600 1rem 'Montserrat Alternates', sans-serif;
+}
+
+.assort-card-text{
+    padding: 1rem 0;
+}

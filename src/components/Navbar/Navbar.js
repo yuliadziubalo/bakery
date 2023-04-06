@@ -5,7 +5,7 @@ import cart from '../../images/icons/корзина.png'
 
 function Navbar() {
   return (
-    <nav className='nav container'>
+    <nav className='container nav'>
         
         <p className='a-logo'>~ Кондитерські <br/> вироби ~</p>
         <ul>

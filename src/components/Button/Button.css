@@ -1,0 +1,16 @@
+.btn {
+    color: white;
+    font: 1.25rem 'Montserrat Alternates', sans-serif;
+    background: #9C338B;
+    border-radius: 10px;
+    width: 16.25rem;
+    height: 3.125rem;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    color: #9C338B;
+    background: white;
+    border: 0.1rem solid #9C338B;
+    scale: 1.1;
+}

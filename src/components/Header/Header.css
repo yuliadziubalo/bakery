@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    padding: 100px 15vw;
+}
+
+h1{
+    font: 600 3rem 'Montserrat Alternates', sans-serif;
+    
+}
+
+.header-descript{
+    font: 1.25rem 'Montserrat Alternates', sans-serif;
+}
+

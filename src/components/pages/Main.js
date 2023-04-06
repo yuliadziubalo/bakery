@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Header/Header'
+import Assortment from '../Assortment/Assortment'
 
 function Main() {
-  return (
-    <div>Main</div>
+  return ( <>
+      <Header />
+      <Assortment />
+    </>
   )
 }
 

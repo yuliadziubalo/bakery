@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.footer{
+    color: white;
+}
+.footer-head{
+    font: 1rem 'Montserrat Alternates', sans-serif;
+    background: #9C338B;
+}
+
+.footer-bottom{
+    font: 1rem 'Ruda', sans-serif;
+    background: #5B1851;
+    text-align: center;
+    padding: 1.5em 0;
+}
