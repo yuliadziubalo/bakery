@@ -6,6 +6,10 @@
 .footer-head{
     font: 1rem 'Montserrat Alternates', sans-serif;
     background: #9C338B;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .footer-bottom{
@@ -13,4 +17,25 @@
     background: #5B1851;
     text-align: center;
     padding: 1.5em 0;
+}
+
+.categories-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    font: bold 1.5rem 'Ruda', sans-serif;
+    line-height: 1.5rem;
+}
+
+.footer-contacts{
+}
+
+.li-item{
+    padding: 0.4rem 0;
+}
+
+h3{
+    font: bold 1.5rem 'Ruda', sans-serif;
 }

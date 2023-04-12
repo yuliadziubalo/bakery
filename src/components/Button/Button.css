@@ -5,7 +5,7 @@
     border-radius: 10px;
     width: 16.25rem;
     height: 3.125rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .btn:hover{
@@ -13,4 +13,8 @@
     background: white;
     border: 0.1rem solid #9C338B;
     scale: 1.1;
+}
+
+.btn:active{
+    transform: scale(0.8);
 }

@@ -7,9 +7,11 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='container head'>
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p className='header-descript'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <Button />
+            <h1>Солодкий світ ваших смаколиків: найкращі десерти та тістечка від нашої кондитерської</h1>
+            <p className='header-descript'>
+            У нас Ви можете замовити незабутні торти на святкові заходи, весільні торти, дитячі торти з улюбленими героями, або ж набори десертів для корпоративного заходу - наші майстри з радістю створять для Вас справжні шедеври печива та кондитерських виробів.
+            <br /> Тож замовляйте тістечка та десерти від нашої кондитерської для своїх близьких та друзів, та насолоджуйтеся найкращими смаколиками від наших майстрів!
+            </p>
         </div>
     )
 }

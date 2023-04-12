@@ -6,8 +6,17 @@
     border-radius: 0.5rem;
     text-align: center;
     font: 600 1rem 'Montserrat Alternates', sans-serif;
+    transition: 0.2s;
+
 }
 
 .assort-card-text{
     padding: 1rem 0;
+}
+
+.assort-card:hover{
+    transform: scale(1.1);
+}
+.assort-card:active{
+    transform: scale(0.9);
 }

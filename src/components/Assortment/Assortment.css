@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
 
 .assortment {
-    background: #D9D3DD;
+    background: #e9d3e7;
     padding-bottom: 50px;
 }
 
@@ -16,5 +16,7 @@ h2 {
 
 .assortment-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }

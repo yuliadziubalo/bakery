@@ -11,7 +11,7 @@ function Navbar() {
         <ul>
             <CustomLink href="/">Головна</CustomLink>
             <CustomLink href="/order">Замовлення</CustomLink>
-            <CustomLink href="/adress">Адреса</CustomLink>
+            <CustomLink href="/adress">Контакти</CustomLink>
             <CustomLink href="/time">Час роботи</CustomLink>
         </ul>
         <div className='phone'>093 878 71 56</div>

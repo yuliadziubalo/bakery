@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.contacts{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: regular;
+}
+.contacts-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 2px solid #9C338B;
+    padding: 3.75rem;
+    flex: 0 0 300px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    background: #FEC600;
+    margin: 3rem auto;
+    padding: 2rem 0;
+}
+
+.form-input{
+    border: 1px solid #9C338B;
+    padding: 10px 15px;
+    width: 350px;
+}
+
+.form-header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5B1851;
+}
+
+textarea{
+    border: 1px solid #9C338B;
+    width: 350px;
+    height: 150px;
+    padding: 10px 15px;
+}

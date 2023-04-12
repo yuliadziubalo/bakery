@@ -4,8 +4,8 @@ import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
 import Main from '../pages/Main';
 import Order from '../pages/Order';
-import Adress from '../pages/Adress';
 import Footer from '../Footer/Footer';
+import Contacts from '../pages/Contacts';
 
 function App() {
     let component
@@ -17,7 +17,7 @@ function App() {
             component = <Order/>
             break
         case "/adress":
-            component = <Adress />
+            component = <Contacts />
             break
     }
     return (

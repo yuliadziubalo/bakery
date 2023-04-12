@@ -5,12 +5,12 @@ import ACard from './ACard/ACard'
 function Assortment() {
   return (
     <div className='container assortment'>
-        <h2>Lorem ipsum</h2>
+        <h2>Категорії</h2>
         <div className='assortment-cards'>
-            <ACard />
-            <ACard />
-            <ACard />
-            <ACard />
+            <ACard category="Торти"/>
+            <ACard category="Капкейки"/>
+            <ACard category="Макаруни"/>
+            <ACard category="Тістечка"/>
         </div>
     </div>
   )
