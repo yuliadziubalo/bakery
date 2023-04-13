@@ -1,0 +1,6 @@
+.nav a:hover, nav a.active{
+    background:  rgb(255, 255, 255);
+    color: #9C338B;
+    cursor: pointer;
+    border-radius: 1rem 1rem 0 0;
+}
