@@ -1,9 +1,9 @@
 import React from 'react'
 import './Button.css'
 
-function Button() {
+function Button({...props}) {
   return (
-    <button className='header-btn btn'> Кніпка </button>
+    <button className='header-btn btn'>{props.text}</button>
   )
 }
 

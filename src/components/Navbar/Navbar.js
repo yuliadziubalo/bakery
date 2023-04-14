@@ -2,6 +2,7 @@ import React from 'react'
 import '../../reset.css'
 import './Navbar.css'
 import cart from '../../images/icons/корзина.png'
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -9,10 +10,10 @@ function Navbar() {
         
         <p className='a-logo'>~ Кондитерські <br/> вироби ~</p>
         <ul>
-            <CustomLink href="/">Головна</CustomLink>
-            <CustomLink href="/order">Замовлення</CustomLink>
-            <CustomLink href="/adress">Контакти</CustomLink>
-            <CustomLink href="/time">Час роботи</CustomLink>
+            <CustomLink to="/">Головна</CustomLink>
+            <CustomLink to="/order">Замовлення</CustomLink>
+            <CustomLink to="/contacts">Контакти</CustomLink>
+            <CustomLink to="/time">Час роботи</CustomLink>
         </ul>
         <div className='phone'>093 878 71 56</div>
         <img alt='cart' height={33} width={38} src={cart}/>
@@ -21,11 +22,12 @@ function Navbar() {
   )
 }
 
-function CustomLink({href, children, ...props}){
-    const path = window.location.pathname
+function CustomLink({to, children, ...props}){
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname, end: true})
     return (
-        <li>
-            <a className={path === href ? 'active' : ''} href={href} {...props}>{children}</a>
+        <li className={isActive ? 'active' : ''}>
+            <Link to={to} {...props}>{children}</Link>
         </li>
     )
 }

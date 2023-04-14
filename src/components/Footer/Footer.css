@@ -7,9 +7,11 @@
     font: 1rem 'Montserrat Alternates', sans-serif;
     background: #9C338B;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
 }
 
 .footer-bottom{
@@ -38,4 +40,8 @@
 
 h3{
     font: bold 1.5rem 'Ruda', sans-serif;
+}
+
+.footer-head > div{
+    flex: 0 0 400px;
 }

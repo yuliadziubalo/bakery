@@ -1,9 +1,9 @@
 .btn {
     color: white;
-    font: 1.25rem 'Montserrat Alternates', sans-serif;
+    font: bold 1.20rem 'Ruda', sans-serif;
     background: #9C338B;
-    border-radius: 10px;
-    width: 16.25rem;
+    border-radius: 8px;
+    width: 13rem;
     height: 3.125rem;
     transition: 0.2s;
 }

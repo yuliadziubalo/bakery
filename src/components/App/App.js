@@ -7,27 +7,21 @@ import Order from '../pages/Order';
 import Footer from '../Footer/Footer';
 import Contacts from '../pages/Contacts';
 import OrderMain from '../pages/OrderMain';
-import ProductCard from '../ProductCard/ProductCard';
+import Cakes from '../pages/Categories pages/Cakes/Cakes';
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
-    let component
-    switch(window.location.pathname){
-        case "/":
-            component = <Main />
-            break
-        case "/order":
-            component = <OrderMain />
-            break
-        case "/adress":
-            component = <Contacts />
-            break
-        
-    }
     return (
         <>
             <Navbar />
-            {component}
-            <ProductCard />
+            <Routes>
+                <Route path="/" element={<Main /> }/>
+                <Route path="order" element={<Order/> }>
+                    <Route path='cake' element={<Cakes />} />
+                </Route>
+                <Route path="contacts" element={<Contacts /> } />
+            </Routes>
             <Footer />
         </>
     )

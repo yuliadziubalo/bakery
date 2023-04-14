@@ -16,13 +16,17 @@
     color: white;
 }
 
-.nav a{
+.nav a {
+    color: inherit;
+}
+
+.nav li {
     transition: 0.3s;
     padding: 0.7rem 1.3rem 1.3rem;
     margin: 0 0.5rem;
 }
 
-.nav a:hover, nav a.active{
+.nav li:hover, nav li.active{
     background:  rgb(255, 255, 255);
     color: #9C338B;
     cursor: pointer;

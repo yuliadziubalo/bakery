@@ -1,6 +1,24 @@
-.productCard{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
 
+.productCard{
+    text-align: center;
+    outline: 2px solid #9C338B;
+    width: 300px;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    background: #f7e5fc;
+    margin: 1rem 0.5rem;
+    
 }
 .card-description{
-    
+    padding: 1.5rem 0;
+}
+
+.img-product{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
