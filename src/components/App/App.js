@@ -18,6 +18,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main /> }/>
                 <Route path="order" element={<Order/> }>
+                    <Route path='' element={<Cakes/>} />
                     <Route path='cake' element={<Cakes />} />
                 </Route>
                 <Route path="contacts" element={<Contacts /> } />
