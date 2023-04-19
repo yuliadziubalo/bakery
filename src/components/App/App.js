@@ -9,7 +9,8 @@ import Contacts from '../pages/Contacts';
 import OrderMain from '../pages/OrderMain';
 import Cakes from '../pages/Categories pages/Cakes/Cakes';
 import { Route, Routes } from 'react-router-dom';
-
+import '../../reset.css'
+import './main.css'
 
 function App() {
     return (
