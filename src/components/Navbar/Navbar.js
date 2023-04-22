@@ -1,35 +1,41 @@
-import React from 'react'
-import '../../reset.css'
+import React, { useEffect } from "react";
 import './Navbar.css'
-import cart from '../../images/icons/корзина.png'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+import { useDispatch, useSelector } from "react-redux";
+import { FaShoppingCart } from "react-icons/fa";
+import { getCartTotal } from "../features/cartSlice"
 
-function Navbar() {
+export default function Navbar() {
+  const { cart, totalQuantity } = useSelector((state) => state.allCart);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart]);
+
   return (
     <nav className='container nav'>
-        
-        <p className='a-logo'>~ Кондитерські <br/> вироби ~</p>
-        <ul>
-            <CustomLink to="/">Головна</CustomLink>
-            <CustomLink to="/order">Замовлення</CustomLink>
-            <CustomLink to="/contacts">Контакти</CustomLink>
-            <CustomLink to="/time">Час роботи</CustomLink>
-        </ul>
-        <div className='phone'>093 878 71 56</div>
-        <img alt='cart' height={33} width={38} src={cart}/>
-        
+      <p className='a-logo'>~ Кондитерські <br /> вироби ~</p>
+      <ul>
+        <CustomLink to="/">Головна</CustomLink>
+        <CustomLink to="/order">Замовлення</CustomLink>
+        <CustomLink to="/contacts">Контакти</CustomLink>
+        <CustomLink to="/time">Про нас</CustomLink>
+        <CustomLink to="/cart"><FaShoppingCart />{totalQuantity}</CustomLink>
+      </ul>
     </nav>
+  );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  return (
+    <li className={isActive ? 'active' : ''}>
+      <Link to={to} {...props}>{children}</Link>
+    </li>
   )
 }
 
-function CustomLink({to, children, ...props}){
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname, end: true})
-    return (
-        <li className={isActive ? 'active' : ''}>
-            <Link to={to} {...props}>{children}</Link>
-        </li>
-    )
-}
 
-export default Navbar
+//

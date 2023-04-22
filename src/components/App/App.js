@@ -1,16 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
-import Main from '../pages/Main';
-import Order from '../pages/Order';
 import Footer from '../Footer/Footer';
-import Contacts from '../pages/Contacts';
-import OrderMain from '../pages/OrderMain';
+import Main from '../pages/Main'
+import Order from '../pages/Order'
 import Cakes from '../pages/Categories pages/Cakes/Cakes';
+import Contacts from '../pages/Contacts';
 import { Route, Routes } from 'react-router-dom';
+
+
 import '../../reset.css'
 import './main.css'
+
+//import Navbar from "./components/Navbar";
+import ProductCard from "../Cart/ProductCard"
+import CartPage from "../Cart/cartPage";
 
 function App() {
     return (
@@ -18,11 +21,12 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Main /> }/>
-                <Route path="order" element={<Order/> }>
+                <Route path="order" element={<Order /> }>
                     <Route path='' element={<Cakes/>} />
                     <Route path='cake' element={<Cakes />} />
                 </Route>
                 <Route path="contacts" element={<Contacts /> } />
+                <Route path="cart" element={<CartPage />} />
             </Routes>
             <Footer />
         </>
@@ -30,3 +34,8 @@ function App() {
 }
 
 export default App;
+
+/*<Routes>
+                <Route exact path="/" element={<ProductCard />} />
+                
+            </Routes>*/
