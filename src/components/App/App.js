@@ -7,7 +7,6 @@ import Cakes from '../pages/Categories pages/Cakes/Cakes';
 import Contacts from '../pages/Contacts';
 import { Route, Routes } from 'react-router-dom';
 
-
 import '../../reset.css'
 import './main.css'
 
@@ -20,12 +19,12 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Main /> }/>
-                <Route path="order" element={<Order /> }>
-                    <Route path='' element={<Cakes/>} />
+                <Route path="/" element={<Main />} />
+                <Route path="order" element={<Order />}>
+                    <Route path='' element={<Cakes />} />
                     <Route path='cake' element={<Cakes />} />
                 </Route>
-                <Route path="contacts" element={<Contacts /> } />
+                <Route path="contacts" element={<Contacts />} />
                 <Route path="cart" element={<CartPage />} />
             </Routes>
             <Footer />

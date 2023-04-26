@@ -36,3 +36,51 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.burger-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .a-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mob {
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 60px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .nav li {
+        display: block;
+        color: white;
+        background: #58234e;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        /*padding-left: 80px;*/
+    }
+
+    .burger-icon{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 1.5rem;
+        color: white;
+        background: transparent;
+    }
+
+    .nav{
+        position: relative;
+    }
+}

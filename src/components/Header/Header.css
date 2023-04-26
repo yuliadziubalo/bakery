@@ -1,20 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
 
-.head{
+.head {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
     padding: 100px 15vw;
+    background: transparent;
+    color: white;
 }
 
-h1{
+h1 {
     font: 600 3rem 'Montserrat Alternates', sans-serif;
-    
+
 }
 
-.header-descript{
+.header-descript {
     font: 1.25rem 'Ruda', sans-serif;
     line-height: 1.75rem;
 }
 
+@keyframes scrollBg {
+    from {
+        transform: translateY(-600px);
+    }
+
+    to {
+        transform: translateY(-700px);
+    }
+}
+
+.scroll-bg {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 330px;
+    background-color: #E8BA9B;
+    /*background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');*/
+    background-image: url('../../images/pexels-igor-ovsyannykov-2059612.jpg');
+    background-image: url('../../images/pexels-işıl-agc-88733181.jpg');
+    background-image: url('../../images/pexels-diana-light-7296694.jpg');
+    background-image: url('../../images/lore-schodts-A7PwjrNLf1U-unsplash.jpg');
+    background-image: url('../../images/diliara-garifullina-ib4PwKIs5i4-unsplash.jpg');
+    background-size: cover;
+    animation: scrollBg 30s linear forwards;
+}

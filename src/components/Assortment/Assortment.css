@@ -11,7 +11,12 @@ h2 {
 }
 
 .assort-card-img {
+    height: 250px;
     width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .assortment-cards{

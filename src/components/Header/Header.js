@@ -5,7 +5,7 @@ import '../../reset.css'
 import './Header.css'
 
 const Header = () => {
-    return (
+    return (<>
         <div className='container head'>
             <h1>Солодкий світ ваших смаколиків: найкращі десерти та тістечка від нашої кондитерської</h1>
             <p className='header-descript'>
@@ -13,6 +13,11 @@ const Header = () => {
             <br /> Тож замовляйте тістечка та десерти від нашої кондитерської для своїх близьких та друзів, та насолоджуйтеся найкращими смаколиками від наших майстрів!
             </p>
         </div>
+
+        <div className='scroll-bg'>
+            
+        </div>
+        </>
     )
 }
 

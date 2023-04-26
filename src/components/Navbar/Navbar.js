@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Navbar.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { getCartTotal } from "../features/cartSlice"
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const { cart, totalQuantity } = useSelector((state) => state.allCart);
+  const [isMobile, setIsMobile] = useState(true);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -15,14 +17,20 @@ export default function Navbar() {
 
   return (
     <nav className='container nav'>
-      <p className='a-logo'>~ Кондитерські <br /> вироби ~</p>
-      <ul>
+      <div className='a-logo'>~ Кондитерські <br /> вироби ~</div>
+      <ul className={isMobile? "nav-links-mob" : "nav-links"}
+      onClick={() => setIsMobile(false)}>
         <CustomLink to="/">Головна</CustomLink>
         <CustomLink to="/order">Замовлення</CustomLink>
         <CustomLink to="/contacts">Контакти</CustomLink>
         <CustomLink to="/time">Про нас</CustomLink>
         <CustomLink to="/cart"><FaShoppingCart />{totalQuantity}</CustomLink>
       </ul>
+
+      <button className="burger-icon"
+      onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? (<FaTimes/>):(<FaBars/>)}
+      </button>
     </nav>
   );
 }
