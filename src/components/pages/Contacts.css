@@ -12,6 +12,7 @@
 
 .card{
     border: 2px solid #9C338B;
+    border-radius: 0.5rem;
     padding: 3rem 3rem;
     flex: 0 0 300px;
     text-align: center;
@@ -20,6 +21,7 @@
 
 .form{
     display: flex;
+    border-radius: 0.5rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -31,6 +33,7 @@
 
 .form-input{
     border: 1px solid #9C338B;
+    border-radius: 0.5rem;
     padding: 10px 15px;
     width: 350px;
 }
@@ -43,6 +46,7 @@
 
 textarea{
     border: 1px solid #9C338B;
+    border-radius: 0.5rem;
     width: 350px;
     height: 150px;
     padding: 10px 15px;

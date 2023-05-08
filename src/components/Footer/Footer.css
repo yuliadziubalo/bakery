@@ -7,10 +7,8 @@
     font: 1rem 'Montserrat Alternates', sans-serif;
     background: #9C338B;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 2rem;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
     gap: 2rem;
 }
 
@@ -31,17 +29,34 @@
     line-height: 1.5rem;
 }
 
-.footer-contacts{
-}
-
 .li-item{
     padding: 0.4rem 0;
 }
 
-h3{
+.h3-footer{
     font: bold 1.5rem 'Ruda', sans-serif;
 }
 
-.footer-head > div{
+.footer-contacts{
+    flex-grow: 1;
+
+}
+.footer-logo, .categories{
+    flex-grow: 3;
+}
+/*.footer-head > div{
     flex: 0 0 400px;
+}*/
+
+div.footer-head{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-head{
+        text-align: center;
+        flex-direction: column;
+    }
+
 }

@@ -8,7 +8,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const { cart, totalQuantity } = useSelector((state) => state.allCart);
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const dispatch = useDispatch();
   useEffect(() => {

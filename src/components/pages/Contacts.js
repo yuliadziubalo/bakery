@@ -22,16 +22,24 @@ function Contacts() {
         </div>
       </div>
 
-      <form className='form'>
+      <form className='form' action="https://formsubmit.co/y.dziubalo@nltu.lviv.ua
+" method="POST">
         <p className='form-header'>Форма зв'язку</p>
-        <input className='form-input' placeholder="Ім'я"></input>
-        <input className='form-input' placeholder="Електронна пошта"></input>
-        <input className='form-input' placeholder="Телефон"></input>
-        <textarea placeholder="Повідомлення"></textarea>
+        <input className='form-input' type="text" name="name" placeholder="Ім'я" required></input>
+        <input className='form-input' type="email" name="email" placeholder="Електронна пошта" required></input>
+        <input className='form-input' type="number" name="telephone" placeholder="Телефон" required></input>
+        <textarea placeholder="Повідомлення" required></textarea>
         <Button text="НАДІСЛАТИ"/>
       </form>
     </div>
   )
 }
+//<button type="submit">Send</button>
+
+/*
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Нове повідомлення">
+<input type="hidden" name="_next" value="http://kondyterska.onlinewebshop.net/index.html">
+*/
 
 export default Contacts

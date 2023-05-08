@@ -5,6 +5,7 @@ import Main from '../pages/Main'
 import Order from '../pages/Order'
 import Cakes from '../pages/Categories pages/Cakes/Cakes';
 import Contacts from '../pages/Contacts';
+import MyComponent from '../../testdata';
 import { Route, Routes } from 'react-router-dom';
 
 import '../../reset.css'
@@ -28,6 +29,8 @@ function App() {
                 <Route path="cart" element={<CartPage />} />
             </Routes>
             <Footer />
+
+            <Cakes/>
         </>
     )
 }

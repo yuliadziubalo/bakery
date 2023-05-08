@@ -22,11 +22,11 @@ h1 {
 
 @keyframes scrollBg {
     from {
-        transform: translateY(-600px);
+        transform: translateY(-700px);
     }
 
     to {
-        transform: translateY(-700px);
+        transform: translateY(-800px);
     }
 }
 
@@ -35,14 +35,14 @@ h1 {
     height: 100%;
     width: 100%;
     position: fixed;
-    padding-bottom: 330px;
+    top: 0;
     background-color: #E8BA9B;
     /*background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');*/
-    background-image: url('../../images/pexels-igor-ovsyannykov-2059612.jpg');
     background-image: url('../../images/pexels-işıl-agc-88733181.jpg');
-    background-image: url('../../images/pexels-diana-light-7296694.jpg');
-    background-image: url('../../images/lore-schodts-A7PwjrNLf1U-unsplash.jpg');
-    background-image: url('../../images/diliara-garifullina-ib4PwKIs5i4-unsplash.jpg');
+    background-image: url('../../images/pexels-işıl-agc-887331813.jpg');
+    background-image: url('../../images/pexels-igor-ovsyannykov-2059612.jpg');
+
+    /*background-image: url('../../images/diliara-garifullina-ib4PwKIs5i4-unsplash.jpg');*/
     background-size: cover;
-    animation: scrollBg 30s linear forwards;
+   /* animation: scrollBg 3s linear forwards;*/
 }
