@@ -6,7 +6,10 @@ function Order() {
   return (
     <>
       <nav className='container nav'>
-        <Link to="cake">Торти</Link>
+        <Link to="cakes">Торти</Link>
+        <Link to="cupcakes">Капкейки</Link>
+        <Link to="macarons">Макаруни</Link>
+        <Link to="pastry">Тістечка</Link>
       </nav>
       
       <Outlet />

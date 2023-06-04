@@ -23,7 +23,7 @@ export default function Navbar() {
         <CustomLink to="/">Головна</CustomLink>
         <CustomLink to="/order">Замовлення</CustomLink>
         <CustomLink to="/contacts">Контакти</CustomLink>
-        <CustomLink to="/time">Про нас</CustomLink>
+        <CustomLink to="/about">Про нас</CustomLink>
         <CustomLink to="/cart"><FaShoppingCart />{totalQuantity}</CustomLink>
       </ul>
 

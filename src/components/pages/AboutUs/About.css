@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Ruda:wght@400;700&display=swap');
+
+.about{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.section{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+}
+
+.info{
+    padding: 3rem;
+}
+
+.info-img-box{
+    background-color: #e9d3e7;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    box-shadow: 22px 21px 30px 1px rgba(94,21,94,0.4);
+
+}
+.info-img{
+    height: 25rem;
+    transform: scale(0.9);
+}
+
+.thank{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 3rem 1rem 8rem 1rem;
+    line-height: 2.5rem;
+}

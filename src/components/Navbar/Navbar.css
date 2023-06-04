@@ -52,6 +52,7 @@
     }
 
     .nav-links-mob {
+        z-index: 1;
         display: block;
         list-style: none;
         left: 0;

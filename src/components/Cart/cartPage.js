@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaTrash, FaPlus, FaMinus } from 'react-icons/fa';
 import "./cartPage.css"
+import products from "../../productData.js"
 
 import {
   getCartTotal,
@@ -9,6 +10,8 @@ import {
   decreaseItemQuantity,
   increaseItemQuantity,
 } from "../features/cartSlice";
+import Button from "../Button/Button";
+
 
 const CartPage = () => {
   const { cart, totalQuantity, totalPrice } = useSelector(
@@ -20,19 +23,23 @@ const CartPage = () => {
   useEffect(() => {
     dispatch(getCartTotal());
   }, [cart]);
-
+console.log("hello" + cart)
   return (
     <div className="container cart">
+      
       <div className="cartItems">
+        <h1>Корзина</h1>
         {cart?.map((data) => (
           <div className="cartItem">
             <img className="cart-img" src={data.img}></img>
 
             <div className="cartItemInfo">
-              <p>{data.title}</p>
-              <p>{data.title}</p>
+              <p>{data.name}</p>
+              <p>{data.price} грн </p>
+              <p>{data.weight}</p>
             </div>
-
+            
+            
             <div className="cartButtons">
               <button className="btn btnCart" onClick={() =>
                 dispatch(decreaseItemQuantity(data.id))}>
@@ -54,7 +61,7 @@ const CartPage = () => {
             </div>
 
             <div className="carItemtPrice">
-              {data.price * data.quantity}
+              {data.price * data.quantity} грн
             </div>
 
           </div>
@@ -64,9 +71,9 @@ const CartPage = () => {
       </div>
 
       <div className="cartSummary">
-        <span>
-          <strong>{totalPrice}</strong>
-        </span>
+        <h1>Замовлення</h1>
+        <div className="total">До сплати: {totalPrice} грн</div>
+        <button className="btn btnOrder">Оформити</button>
       </div>
 
     </div>

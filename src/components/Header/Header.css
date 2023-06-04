@@ -38,9 +38,9 @@ h1 {
     top: 0;
     background-color: #E8BA9B;
     /*background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');*/
-    background-image: url('../../images/pexels-işıl-agc-88733181.jpg');
-    background-image: url('../../images/pexels-işıl-agc-887331813.jpg');
-    background-image: url('../../images/pexels-igor-ovsyannykov-2059612.jpg');
+    background-image: url('../../../public/images/pexels-işıl-agc-88733181.jpg');
+    background-image: url('../../../public/images/pexels-işıl-agc-887331813.jpg');
+    background-image: url('../../../public/images/pexels-igor-ovsyannykov-2059612.jpg');
 
     /*background-image: url('../../images/diliara-garifullina-ib4PwKIs5i4-unsplash.jpg');*/
     background-size: cover;

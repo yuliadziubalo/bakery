@@ -2,41 +2,49 @@ import React, { useEffect, useState } from 'react'
 import ProductCard from '../../../Cart/ProductCard'
 import './Cakes.css'
 import axios from 'axios'
+import products from "../../../../productData"
+
 
 function Cakes() {
-  const [books, setBooks] = useState([]);
+  const [cakes, setCakes] = useState([]);
 
   useEffect(() => {
-    const fetchAllBooks = async () => {
+    const fetchAllCakes = async () => {
       try {
         const res = await axios.get("http://localhost:8800/cakes");
-        setBooks(res.data);
+        setCakes(res.data);
       } catch (err) {
-        console.log(err);
+        //console.log(err);
       }
     };
-    fetchAllBooks();
+    fetchAllCakes();
   }, []);
+
+  //console.log(cakes)
  
   return ( 
-    <div> 
-      {books.map(item => ( 
-        <div key={item.id}> 
-          <h2>{item.name}</h2> 
-          <p>{item.weight}</p> 
-        </div> 
-      ))} 
-    </div> 
+    <div className='container cakes'>
+      <h1 className='h1-cakes'>Торти</h1>
+
+      <div className='category-description'>
+      Ми також пропонуємо торти для різних святкових подій, таких як весілля, дні народження, ювілеї, випускні вечори та інші особливі події. Наші торти стануть справжньою окрасою будь-якого свята та подарують вам та вашим гостям незабутні емоції.
+      </div>
+      <div className='centered'>
+
+      <div className='cakes-cards'>
+        {cakes.map(item => ( 
+        <div className='cakes-card'>
+          <ProductCard id ={item.id} 
+          name = {item.name} 
+          weight = {item.weight} 
+          price = {item.price} 
+          ph={products[0][item.id]}/>
+        </div>
+        ))}
+        </div>
+      </div>
+    </div>
   ); 
 } 
 
 export default Cakes
-
-
-/*<div className='container cakes'>
-      <h1 className='h1-cakes'>Торти</h1>
-      <div className='cakes-cards'>
-        <ProductCard />
-      </div>
-      
-    </div>*/

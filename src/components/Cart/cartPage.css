@@ -5,6 +5,8 @@
     gap: 1rem;
     font: bold 1rem 'Montserrat Alternates', sans-serif;
     margin: 3rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cartItems {
@@ -13,57 +15,80 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    flex-basis: 70%;
-    ;
+    background: #E5D6DC;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
 }
 
 .cartItem {
     display: flex;
-    background: #E5D6DC;
-    border-radius: 2px;
+    background: white;
     border-radius: 0.5rem;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .cartItemQuantity{
-    flex-basis: 20px;
+    flex-basis: 1.25rem;
     text-align: center;
-    padding: 0.5rem;
-    background: white;
+    padding: 0.6rem 0.5rem;
+    background: #E5D6DC;
     border-radius: 0.5rem;
-
 }
 
 
 .cart-img {
-    height: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .btnCart {
-    height: 40px;
-    width: 50px;
+    height: 2.5rem;
+    width: 3.125rem;
 }
 
 .cartItemInfo {
     display: flex;
     flex-direction: column;
+    max-width: 6.25rem;
+    min-width: 6.25rem;
 }
 
 .cartButtons {
     display: flex;
+    max-width: 15.625rem;
+    min-width: 15.625rem;
 }
 
 .cartButtons > *{
-    flex-basis: 50px;
+    flex-basis: 3.125rem;
+    margin: 0 0.3rem;
 }
 
 .carItemtPrice {
-    flex-basis: 50px;
+    font-size: 1.5rem;
+    max-width: 4.375rem;
+    min-width: 4.375rem;
+    text-align: center;
 }
 
 .cartSummary {
-    background: #E5D6DC;
+    color: white;
+    background: #9C338B;
     border-radius: 0.5rem;
-    flex-basis: 30%;
+    padding: 1rem;
+}
+
+.total{
+    font-size: 2rem;
+}
+.btnOrder{
+    color: #9C338B;
+    background-color: white;
 }

@@ -1,20 +1,16 @@
 import React from 'react'
 import './Assortment.css'
 import ACard from './ACard/ACard'
-import cake from "../../images/main page/cake.jpg"
-import cupcake from "../../images/main page/cupcakes.jpg"
-import macaron from "../../images/main page/macarons.jpg"
-import pastry from "../../images/main page/pastry.jpg"
 
 function Assortment() {
   return (
     <div className='container assortment'>
         <h2>Продукція</h2>
         <div className='assortment-cards'>
-            <ACard category="Торти" src={cake}/>
-            <ACard category="Капкейки" src={cupcake}/>
-            <ACard category="Макаруни" src={macaron}/>
-            <ACard category="Тістечка" src={pastry}/>
+            <ACard category="Торти" src={"images/main page/cake.jpg"}/>
+            <ACard category="Капкейки" src={"images/main page/cupcakes.jpg"}/>
+            <ACard category="Макаруни" src={"images/main page/macarons.jpg"}/>
+            <ACard category="Тістечка" src={"images/main page/pastry.jpg"}/>
         </div>
     </div>
   )

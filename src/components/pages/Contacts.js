@@ -7,6 +7,8 @@ function Contacts() {
   return (
     <div className='container contacts'>
       <h1 className='h1-contacts'> Контакти </h1>
+
+      <div className='test'>
       <div className='contacts-cards'>
         <div className='card'>
           <FaHome size='3rem'/>
@@ -14,7 +16,7 @@ function Contacts() {
         </div>
         <div className='card'>
           <FaPhoneAlt size='3rem'/>
-          <p className='p-card'>+380938787156</p>
+          <p className='p-card'>+38 (093) 87 87 878</p>
         </div>
         <div className='card'>
           <FaEnvelope size='3rem'/>
@@ -31,6 +33,7 @@ function Contacts() {
         <textarea placeholder="Повідомлення" required></textarea>
         <Button text="НАДІСЛАТИ"/>
       </form>
+      </div>
     </div>
   )
 }

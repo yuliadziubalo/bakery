@@ -2,7 +2,7 @@
 
 .assortment {
     background: #e9d3e7;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 }
 
 .assort-card-img {
-    height: 250px;
+    height: 15.625rem;
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
@@ -23,5 +23,5 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }

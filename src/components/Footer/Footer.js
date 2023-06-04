@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
+import { FaPhone, FaHome, FaClock } from 'react-icons/fa'
 
 function Footer() {
   return (
@@ -11,25 +13,26 @@ function Footer() {
           <h3 className='h3-footer'>Категорії</h3>
           <ul className='categories-list'>
             <li className='li-item'>
-              <a>Торти</a></li>
-            <li className='li-item'>Капкейки</li>
-            <li className='li-item'>Макаруни</li>
-            <li className='li-item'>Тістечка</li>
+              <Link to="/order/cakes">Торти</Link>
+            </li>
+            <li className='li-item'><Link to="/order/cupcakes">Капкейки</Link></li>
+            <li className='li-item'><Link to="/order/macarons">Макаруни</Link></li>
+            <li className='li-item'><Link to="/order/pastry">Тістечка</Link></li>
           </ul>
         </div>
 
         <div className='footer-contacts'>
           <h3 className='h3-footer'>Контакти</h3>
           <div className='footer-contact'>
-            <img alt='' className='contact-icon'></img>
+            <FaClock></FaClock>
             <p className='contact-info'>Пн-Нд | 9.00-18.00</p>
           </div>
           <div className='footer-contact'>
-            <img alt='' className='contact-icon'></img>
-            <p className='contact-info'>+380938787156</p>
+            <FaPhone></FaPhone>
+            <p className='contact-info'>+38 (093) 87 87 878</p>
           </div>
           <div className='footer-contact'>
-            <img alt='' className='contact-icon'></img>
+            <FaHome></FaHome>
             <p className='contact-info'>м. Львів</p>
           </div>
         </div>
