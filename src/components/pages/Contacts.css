@@ -2,11 +2,18 @@
 
 .contacts{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: regular;
+    margin-bottom: 3rem;
 }
 .contacts-cards{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.test{
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -14,9 +21,16 @@
     border: 2px solid #9C338B;
     border-radius: 0.5rem;
     padding: 3rem 3rem;
-    flex: 0 0 300px;
+    flex: 0 0 18.75rem;
     text-align: center;
     margin: 2rem;
+    max-height: 12.5rem;
+    box-shadow: 22px 21px 30px -7px rgba(94,21,94,0.3);
+    font-weight: 700;
+    transition: 0.1s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 
 .form{
@@ -29,27 +43,31 @@
     background: #FEC600;
     margin: 3rem auto;
     padding: 2rem 0;
+    max-width: 31.25rem;
+    min-width: 25rem;
+    flex-grow: 1;
 }
 
 .form-input{
     border: 1px solid #9C338B;
     border-radius: 0.5rem;
-    padding: 10px 15px;
-    width: 350px;
+    padding: 0.625rem 0.9375rem;
+    width: 75%;
 }
 
 .form-header{
     font-size: 2rem;
     font-weight: 600;
     color: #5B1851;
+    
 }
 
 textarea{
     border: 1px solid #9C338B;
     border-radius: 0.5rem;
-    width: 350px;
-    height: 150px;
-    padding: 10px 15px;
+    width: 75%;
+    height: 9.375rem;
+    padding: 0.625rem 0.9375rem;
 }
 
 .p-card{
@@ -59,3 +77,6 @@ textarea{
 .h1-contacts{
     padding: 3rem 0;
 }
+/*.btn{
+    box-shadow: 10px 10px 10px -5px rgba(94,21,94,0.4);
+}*/
