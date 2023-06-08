@@ -36,3 +36,23 @@
     padding: 3rem 1rem 8rem 1rem;
     line-height: 2.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    .section{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .info-img{
+        height: 13rem;
+    }
+    .info-img-box{
+        padding: 0;
+        box-shadow: 10px 10px 15px 1px rgba(94,21,94,0.4);
+        margin: 2rem 0;
+    }
+
+    .info{
+        padding: 0;
+    }
+}

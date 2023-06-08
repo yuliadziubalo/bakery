@@ -1,6 +1,13 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .container{
-        
+    .section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info{
+        padding: 0;
+    }
+    .footer-contact{
+        justify-content: center;
     }
 }
 
@@ -12,4 +19,9 @@
     html{
         font-size: 14px;
     }
+
+    .footer-contact{
+        justify-content: center;
+    }
+
 }

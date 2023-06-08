@@ -7,10 +7,10 @@ function Assortment() {
     <div className='container assortment'>
         <h2>Продукція</h2>
         <div className='assortment-cards'>
-            <ACard category="Торти" src={"images/main page/cake.jpg"}/>
-            <ACard category="Капкейки" src={"images/main page/cupcakes.jpg"}/>
-            <ACard category="Макаруни" src={"images/main page/macarons.jpg"}/>
-            <ACard category="Тістечка" src={"images/main page/pastry.jpg"}/>
+            <ACard category="Торти" a="order/cakes" src={"images/main page/cake.jpg"}/>
+            <ACard category="Капкейки" a="/order/cupcakes" src={"images/main page/cupcakes.jpg"}/>
+            <ACard category="Макаруни" a="/order/macarons"src={"images/main page/macarons.jpg"}/>
+            <ACard category="Тістечка" a="/order/pastry" src={"images/main page/pastry.jpg"}/>
         </div>
     </div>
   )

@@ -18,7 +18,7 @@ import Cupcakes from '../pages/Categories pages/Cupcakes/Cupcakes';
 import Macarons from '../pages/Categories pages/Macarons/Macarons';
 import Pastry from '../pages/Categories pages/Pastry/Pastry';
 import About from '../pages/AboutUs/About';
-
+import './main.css'
 function App() {
     return (
         <>
