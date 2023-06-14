@@ -18,6 +18,11 @@
 .nav a {
     color: inherit;
 }
+.c{
+    display: inline-block;
+    max-width: 0.5rem;
+    padding: 0 0.2rem;
+}
 
 .nav li {
     transition: 0.3s;

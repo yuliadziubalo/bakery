@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 function ACard(props) {
   return (
-    
     <div className='assort-card'>
         <Link className='link' to={props.a}></Link>
         <div>

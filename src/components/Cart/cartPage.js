@@ -12,7 +12,6 @@ import {
 } from "../features/cartSlice";
 import Button from "../Button/Button";
 
-
 const CartPage = () => {
   const { cart, totalQuantity, totalPrice } = useSelector(
     (state) => state.allCart
@@ -23,12 +22,12 @@ const CartPage = () => {
   useEffect(() => {
     dispatch(getCartTotal());
   }, [cart]);
-console.log("hello" + cart)
+
   return (
     <div className="container cart">
       
       <div className="cartItems">
-        <h1>Корзина</h1>
+        <h1>Кошик</h1>
         {cart?.map((data) => (
           <div className="cartItem">
             <img className="cart-img" src={data.img}></img>

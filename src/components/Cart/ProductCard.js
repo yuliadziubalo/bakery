@@ -6,15 +6,20 @@ import Button from "../Button/Button";
 import './ProductCard.css'
 
 import products from "../../productData.js"
-
+import { Link } from "react-router-dom";
+import Description from "../Description/Description";
 
 export default function ProductCard({...props}) {
 
+  function Descrip() {
+    <Description></Description>
+  }
+
   const dispatch = useDispatch();
   let url = `../../images/products/${props.ph}`;
-  console.log(url)
   return (
     <div className="productCards">
+      <div className='card-link' to="cart" onClick={Descrip}></div>
         <div className='productCard' key={props.id} size="">
           <img className='img-product' src={url} alt="cake"/>
           <div className='card-description'>

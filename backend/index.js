@@ -15,7 +15,7 @@ const db = mysql.createConnection({
 });
 
 app.get("/", (req, res) => {
-  res.json("hello");
+  res.json("test");
 });
 
 app.get("/cakes", (req, res) => {

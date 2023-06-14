@@ -4,7 +4,6 @@ import './Cakes.css'
 import axios from 'axios'
 import products from "../../../../productData"
 
-
 function Cakes() {
   const [cakes, setCakes] = useState([]);
 
@@ -14,13 +13,11 @@ function Cakes() {
         const res = await axios.get("http://localhost:8800/cakes");
         setCakes(res.data);
       } catch (err) {
-        //console.log(err);
+        console.log(err);
       }
     };
     fetchAllCakes();
   }, []);
-
-  //console.log(cakes)
  
   return ( 
     <div className='container cakes'>
@@ -41,7 +38,8 @@ function Cakes() {
           ph={products[0][item.id]}/>
         </div>
         ))}
-        </div>
+      </div>
+      
       </div>
     </div>
   ); 

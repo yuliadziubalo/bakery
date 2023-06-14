@@ -24,7 +24,7 @@ export default function Navbar() {
         <CustomLink to="/order">Замовлення</CustomLink>
         <CustomLink to="/contacts">Контакти</CustomLink>
         <CustomLink to="/about">Про нас</CustomLink>
-        <CustomLink to="/cart"><FaShoppingCart />{totalQuantity}</CustomLink>
+        <CustomLink  to="/cart"><FaShoppingCart /><span className="c">{totalQuantity}</span></CustomLink>
       </ul>
 
       <button className="burger-icon"

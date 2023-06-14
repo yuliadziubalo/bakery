@@ -2,6 +2,8 @@
   "name": "bakery",
   "version": "0.1.0",
   "private": true,
+  "json.validate.enable": false,
+  "json.schemaDownload.enable": true,
   "engines":{
     "node": "18.x"
   },

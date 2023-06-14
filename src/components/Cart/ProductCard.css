@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    position: relative;
 }
 .productCard{
     width: 280px;
@@ -22,6 +22,7 @@
 .card-weight{
     font-weight: 400;
     color: #676069;
+    padding: 0.2rem 0;
 }
 
 .card-price{
@@ -40,4 +41,14 @@
 
 .div-btn {
     text-align: center;
+}
+
+.card-link{
+    display: inline-block;
+    height: 60%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
 }
